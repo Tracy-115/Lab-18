@@ -24,7 +24,7 @@
       cin.ignore();
 
       char decision = 'Y';
-      while (toupper(decision) == 'Y') {
+      while (toupper(decision) == 'Y') { //toupper is used to turn lowercase y into Y so that any y can be Y
           float rating;
           string comment;
 
@@ -72,7 +72,7 @@
       }
       temp->next = newNode;
     }
-    void output( Movie *head){
+    void output( Movie *head){ // this is for the output 
       int count = 0;
         float total = 0;
         Movie *temp = head;
@@ -87,7 +87,7 @@
         }
     }
 
-    void deleteReview(Movie *&head){
+    void deleteReview(Movie *&head){//this is to delete the review
       while (head){
         Movie *temp=head;
         head = head->next;
